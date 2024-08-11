@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+<div class="field">
+    <ul>
+        <% if(locals.data){ %>
+        <% for (var i=0;i<data.length;i++){ %>
+            <% if (data.length>0) { %>
+                <p>entry number <%= data[i].id %></p>
+                <h2><%=data[i].title%></h2>  
+                <h3><%= data[i].name %></h3>
+                <p><%= data[i].body %></p>
+                <hr>
+            <% } %>
+         <% } %>
+        <% } %>
+    </ul>
+</div>
+</div>
+</body>
+</html>

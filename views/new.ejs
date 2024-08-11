@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+
+<div class="field">
+    <h2>Create a blog entry</h2>
+    <form method="post">
+        <input placeholder="id" type="text" class="receive" name="id"> 
+        <input placeholder="title" type="text" class="receive" name="title"> 
+        <input placeholder="name" type="text" class="receive" name="name"> 
+        <textarea placeholder="text" type="text" class="receive para" name="body"></textarea>
+        <input type="submit" formaction="/submit" value="Submit">
+        <input type="submit" formaction="/edit" value="edit">
+        <input type="submit" formaction="/delete"  value="delete">
+    </form>
+</div>
+</div>
+</body>
+</html>
